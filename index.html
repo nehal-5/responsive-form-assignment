@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="left-section">
+      <h1>Fill out the Form!</h1>
+      <img src="../images/handshake.png" alt="Illustration" />
+      <h2>Join Our Exclusive Program</h2>
+      <p>
+        Apply now to be part of something amazing. Stay ahead with the latest updates and exclusive offers.
+      </p>
+    </div>
+
+    <div class="form-section">
+      <form id="myForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <select required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+
+        <button onclick="showPopUp(event)">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>Thank you for applying 🎉</h2>
+      <p>You will get an email soon.</p>
+      <button onclick="closePopUp()">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
